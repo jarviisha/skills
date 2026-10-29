@@ -1,0 +1,16 @@
+{
+  "name": "skills",
+  "version": "0.1.0",
+  "description": "jarviisha's agent skills, for Claude Code and Codex",
+  "author": {
+    "name": "jarviisha"
+  },
+  "repository": "https://github.com/jarviisha/skills",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "jarviisha skills",
+    "shortDescription": "Agent skills for coordinating and building with coding agents",
+    "developerName": "jarviisha",
+    "category": "Developer Tools"
+  }
+}

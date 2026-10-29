@@ -1,0 +1,10 @@
+{
+  "name": "skills",
+  "description": "jarviisha's agent skills, for Claude Code and Codex",
+  "version": "0.1.0",
+  "author": {
+    "name": "jarviisha"
+  },
+  "repository": "https://github.com/jarviisha/skills",
+  "license": "MIT"
+}

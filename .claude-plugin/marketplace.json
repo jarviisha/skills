@@ -1,0 +1,16 @@
+{
+  "name": "jarviisha",
+  "owner": {
+    "name": "jarviisha"
+  },
+  "metadata": {
+    "description": "jarviisha's agent skills, for Claude Code and Codex"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "jarviisha's agent skills, for Claude Code and Codex"
+    }
+  ]
+}
