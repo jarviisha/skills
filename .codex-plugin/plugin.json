@@ -6,6 +6,7 @@
     "name": "jarviisha"
   },
   "repository": "https://github.com/jarviisha/skills",
+  "license": "MIT",
   "skills": "./skills/",
   "interface": {
     "displayName": "jarviisha skills",
