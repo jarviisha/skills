@@ -42,7 +42,7 @@ A worker keeps one transport for its whole life. Never resume a session on anoth
 |---|---|---|
 | Claude Code | in the worktree: `claude -p --session-id <uuid> --strict-mcp-config --add-dir <run> --model <m> --permission-mode <mode> --allowedTools "<a>,<b>" < prompt.md`; you choose the uuid and write it to `session.md` **before** starting | the same flags with `--resume <uuid>` instead of `--session-id`, prompt on stdin |
 | Codex | `codex exec --json -C <worktree> --add-dir <run> --add-dir <repo>/.git -m <m> -s <sandbox> "<prompt>"`; write `session.md` with `session: pending` first, then fill in the id from the `thread.started` event | from inside the worktree: `codex exec --json resume <id> -c sandbox_mode='"<sandbox>"' -c 'sandbox_workspace_write.writable_roots=["<run>","<repo>/.git"]' "<prompt>"` (resume takes no `-s`, `-C` or `--add-dir`) |
-| A host's own tool (onehand `open_session`, agent teams) | only if it returns a handle and can send a later turn | that tool |
+| A host's own tool (onehand `open_worker`, agent teams) | only if it returns a handle and can send a later turn | that tool |
 
 Run each turn in the background with its output in `<run>/<job>/turn-<n>.log`, and record the
 process id in `session.md`. Each of these was learnt by a turn that silently did nothing:
